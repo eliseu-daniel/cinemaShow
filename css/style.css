@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.login input[type=email], input[type=text], input[type=password], input[type=submit]{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    margin: 5px;
+    text-align: center;
+}
+
+.cadAdm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.cadAdm input[type=email], input[type=text], input[type=password], input[type=submit]{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    margin: 5px;
+    text-align: center;
+}
+
+.menu{
+    padding: 20px;
+    background-color: aqua;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: right;
+}
+
+.menu li{
+    list-style: none;
+    margin: 15px;
+}
+
+.menu li:hover{
+    background-color:darkolivegreen;
+    border-bottom: 3px solid orange;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu2{
+    padding: 20px;
+    background-color: aqua;
+}
+
+.menu2 ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu2 li{
+    list-style: none;
+    margin: 15px;
+}
+
+.menu2 li:hover{
+    border-bottom: 3px solid orange;
+}
+
+.menu2 a{
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card ul{
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.card li{
+    /* background-color: blue; */
+    width: 240px;
+    margin: 10px;
+    list-style: none;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card li:hover{
+    background-color: aqua;
+}
+
+.card img{
+    display: flex;
+    padding: 10px;
+    width: 220px;
+}
+
+.duplo1{
+    margin-top: 50px;
+}
+.duplo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.duplo textarea, input[type=text], input[type=number], input[type=file]{
+    display: flex;
+    flex-direction: column;
+}
