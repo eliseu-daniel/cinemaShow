@@ -14,7 +14,7 @@
     <div class="duplo1">
         <h2 align=center>CADASTRAR FILME</h2>
         <div class="duplo">
-            <form action="" method="post">
+            <form action="" method="post" enctype="multipart/form-data">
                 <label for="titulo">Titulo</label>
                 <input type="text" name="titulo" id="titulo">
                 <label for="genero">Genero</label>

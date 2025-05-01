@@ -13,12 +13,23 @@
     ?>
     <div class="card">
         <ul>
+            <?php
+                    require_once("fav-filmebd.php");
+                    if($retornoDados2 > 0)
+                    {
+                        foreach($dados2 as $linha){
+            ?>
             <li>
-                <a href="filme.php">
-                    <h3 align=center>Titulo</h3>
-                    <img src="./imagens/OIP.jpg">
+                <a href="./filme.php">
+                    <img src="./imagens/<?= $dados2->imagemFilme ?>">
+                    <h3 align=center><?= $dados2->tituloFilme ?></h3>
                 </a>
             </li>
+            <?php
+                        exit();
+                        }
+                    }
+                ?>
         </ul>
     </div>
 </body>

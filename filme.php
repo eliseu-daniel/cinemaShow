@@ -10,27 +10,44 @@
     <h1 align=center>CINEMA SHOW</h1>
     <?php 
         include('./_menu2.php');
+
+        require_once("list-filmesbd.php");
+            if($retornoDados > 0)
+            {
+                foreach($dados as $linha){
     ?>
-    <div class="imagem">
-        <img src="" alt="">
-    </div>
-    <div class="principal">
-        <h2>Titulo</h2>
-        <h3>Sinopse:</h3>
-        <p>Filme assim e assado</p>
-        <h3>Genero:</h3>
-        <p>Genero tal</p>
-        <h3>Atores:</h3>
-        <p>Esses atores</p>
-        <h3>Duração:</h3>
-        <p>1h30</p>
-        <h3>Ano de Lançamento:</h3>
-        <p>2017</p>
-        <h3>Trailler:</h3>
-        <a href="">Link ai</a>
-    </div>
-    <div class="fav">
-        <button>Favorito</button>
+    <div class="filme">
+
+        <div class="imagem">
+            <img src="./imagens/<?= $dados->imagemFilme ?>" alt="">
+        </div>
+        <div class="principal">
+            <h2>Titulo:</h2>
+            <p><?= $dados->tituloFilme ?></p>     
+            <h3>Sinopse:</h3>
+            <p><?= $dados->sinopseFilme?></p>
+            <h3>Genero:</h3>
+            <p><?= $dados->generoFilme?></p>
+            <h3>Atores:</h3>
+            <p><?= $dados->atoresFilme?></p>
+            <h3>Duração:</h3>
+            <p><?= $dados->duracaoFilme?></p>
+            <h3>Ano de Lançamento:</h3>
+            <p><?= $dados->lancamentoFilme?></p>
+            <h3>Trailler:</h3>
+            <iframe width="320" height="240"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            allowfullscreen
+        </iframe>
+        </div>
+        <div class="fav">
+            <button>Favorito</button>
+        </div>
+        <?php
+                exit();
+            }
+        }
+        ?>
     </div>
 </body>
 </html>

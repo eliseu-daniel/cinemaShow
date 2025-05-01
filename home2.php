@@ -11,14 +11,23 @@
     <?php 
         include('./_menu1.php');
     ?>
-    <div class="card">
+    <div class="card2">
         <ul>
+        <?php
+                    require_once("list-filmesbd.php");
+                    if($retornoDados > 0)
+                    {
+                        foreach($dados as $linha){
+            ?>
             <li>
-                <a href="filme.php">
-                    <img src="./imagens/OIP.jpg">
-                    <h3 align=center>Titulo</h3>
-                </a>
+                <img src="./imagens/<?= $dados->imagemFilme ?>">
+                <h3 align=center><?= $dados->tituloFilme ?></h3>
             </li>
+            <?php
+                        exit();
+                        }
+                    }
+                ?>
         </ul>
     </div>
 </body>
