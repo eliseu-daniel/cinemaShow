@@ -11,7 +11,7 @@
     <?php 
         include('./_menu2.php');
 
-        require_once("list-filmesbd.php");
+        require_once("list-filmeSelect.php");
             if($retornoDados > 0)
             {
                 foreach($dados as $linha){
@@ -19,21 +19,20 @@
     <div class="filme">
 
         <div class="imagem">
-            <img src="./imagens/<?= $dados->imagemFilme ?>" alt="">
+            <img src="./imagens/<?= $linha->imagemFilme ?>" alt="">
         </div>
         <div class="principal">
-            <h2>Titulo:</h2>
-            <p><?= $dados->tituloFilme ?></p>     
+            <h2 align=center><?= $linha->tituloFilme ?></h2>    
             <h3>Sinopse:</h3>
-            <p><?= $dados->sinopseFilme?></p>
+            <p><?= $linha->sinopseFilme?></p>
             <h3>Genero:</h3>
-            <p><?= $dados->generoFilme?></p>
+            <p><?= $linha->generoFilme?></p>
             <h3>Atores:</h3>
-            <p><?= $dados->atoresFilme?></p>
+            <p><?= $linha->atoresFilme?></p>
             <h3>Duração:</h3>
-            <p><?= $dados->duracaoFilme?></p>
+            <p><?= $linha->duracaoFilme?></p>
             <h3>Ano de Lançamento:</h3>
-            <p><?= $dados->lancamentoFilme?></p>
+            <p><?= $linha->lancamentoFilme?></p>
             <h3>Trailler:</h3>
             <iframe width="320" height="240"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
@@ -44,7 +43,6 @@
             <button>Favorito</button>
         </div>
         <?php
-                exit();
             }
         }
         ?>

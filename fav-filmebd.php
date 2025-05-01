@@ -10,7 +10,7 @@
 
         $stmt->execute($params);
 
-        $dados2 = $stmt->fetchObject();
+        $dados2 = $stmt->fetchAll(PDO::FETCH_OBJ);
 
         $retornoDados2 = $stmt->rowCount();
     } catch (PDOException $e) {

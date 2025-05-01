@@ -60,7 +60,7 @@
 }
 
 .menu2{
-    padding: 20px;
+    padding: 10px;
     background-color: aqua;
 }
 
@@ -71,7 +71,7 @@
 
 .menu2 li{
     list-style: none;
-    margin: 15px;
+    margin: 17px;
 }
 
 .menu2 li:hover{
@@ -148,6 +148,13 @@
 .imagem{
     flex: 1;
     padding-left: 3%;
+}
+
+.imagem img{
+    display: flex;
+    padding: 10px;
+    width: 250px;
+    height: 400px;
 }
 
 .principal{

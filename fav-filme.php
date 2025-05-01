@@ -20,13 +20,12 @@
                         foreach($dados2 as $linha){
             ?>
             <li>
-                <a href="./filme.php">
-                    <img src="./imagens/<?= $dados2->imagemFilme ?>">
-                    <h3 align=center><?= $dados2->tituloFilme ?></h3>
+                <a href="./filme.php?id=<?= $linha->IDfilme?>">
+                    <img src="./imagens/<?= $linha->imagemFilme ?>">
+                    <h3 align=center><?= $linha->tituloFilme ?></h3>
                 </a>
             </li>
             <?php
-                        exit();
                         }
                     }
                 ?>

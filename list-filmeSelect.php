@@ -1,9 +1,13 @@
 <?php
     require_once('./conexao/conexao.php');
+    $idfilme = $_GET['id'];
     try{
-        $sql = "SELECT * FROM filmes";
+        $sql = "SELECT * FROM filmes WHERE IDfilme = :id";
 
-        $stmt = $conexao->query($sql);
+        $stmt = $conexao->prepare($sql);
+        $params = [':id' => $idfilme];
+        
+        $stmt->execute($params);
 
         $dados = $stmt->fetchAll(PDO::FETCH_OBJ);
 
