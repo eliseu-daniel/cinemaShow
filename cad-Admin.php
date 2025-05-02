@@ -13,7 +13,7 @@
         ?>
     <div class="cadAdm">
         <h2>CADASTRAR ADMINISTRADOR</h2>
-        <form action="index.php" method="post">
+        <form action="cad-Adminbd.php" method="post">
             <label for="nome">Nome Completo</label>
             <input type="text" name="nome" id="nome" placeholder="Nome Completo">
             <label for="email">Email</label>

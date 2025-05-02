@@ -1,6 +1,8 @@
 <?php
+    session_start();
+
     require_once('./conexao/conexao.php');
-    $idFav = 1;
+    $idFav = $_SESSION['id'];
     try{
         $sql = "SELECT * FROM filmes where IDuser = :id ";
 

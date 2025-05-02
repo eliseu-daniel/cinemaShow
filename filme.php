@@ -40,12 +40,14 @@
         </iframe>
         </div>
         <div class="fav">
-            <button>Favorito</button>
+            <button onclick="favFunction()">Favorito</button>
         </div>
         <?php
             }
         }
         ?>
     </div>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>

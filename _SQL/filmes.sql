@@ -40,7 +40,7 @@ CREATE TABLE `filmes` (
   `lancamentoFilme` year(4) NOT NULL,
   `imagemFilme` varchar(255) NOT NULL,
   `traillerFilme` varchar(255) NOT NULL,
-  `favFilme` int(11) NOT NULL
+  `favFilme` int(11) NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------

@@ -113,17 +113,27 @@
     display: flex;
     padding: 10px;
     width: 220px;
+    height: 300px;
 }
 
-.card2 li{
-    display: flex;
-    align-items: center;
+.card2 table{
+    border: 2px solid #777;
+}
+
+.card2 td,th{
+    border: 1px solid #777;
+    padding: 3px 5px;
+
 }
 
 .card2 img{
     display: flex;
     padding: 10px;
     width: 60px;
+}
+
+.t-img img{
+    width: 24px;
 }
 
 .duplo1{
