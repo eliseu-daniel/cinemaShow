@@ -20,6 +20,7 @@
                 session_start();
 
                 $_SESSION["id"] = $dados->IDuser;
+                $_SESSION["cargo"] = $dados->cargoUser;
 
                 if($dados->cargoUser == "admin"){
                     header("location:./home2.php");

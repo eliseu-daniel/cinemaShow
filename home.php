@@ -11,6 +11,7 @@
     <?php 
         include('./_menu2.php');
     ?>
+
     <div class="card">
         <ul>
             <?php
@@ -32,5 +33,7 @@
                 ?>
         </ul>
     </div>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>

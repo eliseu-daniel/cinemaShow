@@ -1,3 +1,11 @@
+<?php
+    session_start();
+
+    if($_SESSION['cargo'] != 'admin'){
+        header("location:./index.php");
+    }
+?>
+
 <div class="menu">
     <ul>
         <li><a href="home2.php">VISUALIZAR</a></li>

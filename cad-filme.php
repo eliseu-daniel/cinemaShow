@@ -1,3 +1,10 @@
+<?php
+    session_start();
+
+    if($_SESSION['cargo'] != 'admin'){
+        header("location:./index.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

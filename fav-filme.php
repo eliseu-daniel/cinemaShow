@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1 align=center>CINEMA SHOW</h1>
+    <h1 align=center>CINEMA SHOW - FAVORITOS</h1>
     <?php 
         include('./_menu2.php');
     ?>
@@ -31,5 +31,7 @@
                 ?>
         </ul>
     </div>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>

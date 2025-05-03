@@ -82,8 +82,15 @@
     text-decoration: none;
 }
 
-.card {
+.visu{
+    margin-left: 10px;
     display: flex;
+    flex-direction: column;
+    width: 60px;
+}
+
+.card {
+    display: flex; 
     justify-content: center;
     align-items: center;
 }
@@ -95,10 +102,9 @@
 }
 
 .card li{
-    /* background-color: blue; */
     width: 240px;
     margin: 10px;
-    list-style: none;
+    list-style:none;
 }
 
 .card a{

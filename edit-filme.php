@@ -1,3 +1,11 @@
+<?php
+    session_start();
+
+    if($_SESSION['cargo'] != 'admin'){
+        header("location:./index.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,14 +21,16 @@
     ?>
     <h2 align=center>EDITAR FILME</h2>
     <div class="duplo">
-        <form action="" method="post">
+        <form action="./edit-filmebd.php" method="post" enctype="multipart/form-data">
         <?php
+
+                    $idFilme = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
                     require_once("list-filmeSelect.php");
                     if($retornoDados > 0)
                     {
                         foreach($dados as $linha){
-                        ?>
-
+        ?>
+            <input type="hidden" name="id" value="<?= $idFilme ?>">
             <label for="titulo">Titulo</label>
             <input type="text" name="titulo" id="titulo" value="<?= $linha->tituloFilme ?>">
             <label for="genero">Genero</label>

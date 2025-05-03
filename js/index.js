@@ -16,6 +16,45 @@ function favFunction() {
         element.style.textTransform = 'uppercase';
         element.style.color = 'rgb(195, 195, 195)';
     }
+}
 
+function visualizacao(){
+    const opcao = document.getElementById("tipoVisu");
+    const elementCard = document.querySelector(".card");
+    const element = document.querySelector(".card ul");
+    const elementLI = document.querySelectorAll(".card li");
+    const elementIMG = document.querySelectorAll(".card img");
+    const elementA = document.querySelectorAll(".card a");
 
+    if(opcao.value == 'lista'){
+            elementCard.style.flexDirection = 'column';
+            elementCard.style.display = 'unset';
+            element.style.display = 'unset';
+            elementLI.forEach(elementLI => { 
+                elementLI.style.listStyle = 'disc';
+                elementLI.style.width = 'unset';
+            });
+            elementIMG.forEach(elementIMG => { 
+                elementIMG.style.width = '150px';
+                elementIMG.style.height = '150px';                
+            });
+            elementA.forEach(elementA => {
+                elementA.style.display = 'flex';
+            })
+    }else{
+        elementCard.style.flexDirection = '';
+        elementCard.style.display = '';
+        element.style.display = '';
+        elementLI.forEach(elementLI => { 
+            elementLI.style.listStyle = '';
+            elementLI.style.width = '';
+        });
+        elementIMG.forEach(elementIMG => { 
+            elementIMG.style.width = '';
+            elementIMG.style.height = '';                
+        });
+        elementA.forEach(elementA => {
+            elementA.style.display = '';
+        })
+    }
 }
