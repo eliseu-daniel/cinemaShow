@@ -1,6 +1,11 @@
 <?php
     session_start();
 
+    if(!isset($_SESSION["id"])){
+        header("location:./index.php");
+        exit();
+    }
+    
     if($_SESSION['cargo'] != 'admin'){
         header("location:./index.php");
     }
