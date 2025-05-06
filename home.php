@@ -5,6 +5,11 @@
         header("location:./index.php");
         exit();
     }
+
+    if(($_SESSION['cargo'] != 'user')){
+        header("location:./index.php");
+        exit();
+    }
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +24,7 @@
     <h1 align=center>CINEMA SHOW</h1>
     <?php 
         include('./_menu2.php');
+        include('./_visu.php');
     ?>
 
     <div class="card">

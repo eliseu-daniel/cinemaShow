@@ -16,6 +16,7 @@ function favFunction() {
         element.style.textTransform = 'uppercase';
         element.style.color = 'rgb(195, 195, 195)';
     }
+
 }
 
 function visualizacao(){

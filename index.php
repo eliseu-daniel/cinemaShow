@@ -14,7 +14,7 @@
             <input type="email" name="email" id="email" placeholder="E-mail">
             <label for="senha">Senha</label>
             <input type="password" name="senha" id="senha" placeholder="Senha">
-            <a href="cad-User.php">Cadastre-se</a>
+            <a href="./cad-User.php">Cadastre-se</a>
             <input type="submit" value="Entrar">
         </form>
     </div>

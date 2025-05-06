@@ -19,6 +19,7 @@
     <h1 align=center>CINEMA SHOW - FAVORITOS</h1>
     <?php 
         include('./_menu2.php');
+        include('./_visu.php');
     ?>
     <div class="card">
         <ul>

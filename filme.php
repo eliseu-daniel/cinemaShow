@@ -20,6 +20,8 @@
     <?php 
         include('./_menu2.php');
 
+        $idFilme = $_GET["id"];
+
         require_once("list-filmeSelect.php");
             if($retornoDados > 0)
             {
@@ -49,7 +51,12 @@
         </iframe>
         </div>
         <div class="fav">
-            <button onclick="favFunction()">Favorito</button>
+            <form action="./filmebd.php" method="post">
+                <input type="hidden" name="idFilme" value="<?= $idFilme?>" >
+                <input type="hidden" name="idUser" value="<?= $_SESSION['id'];?>" >
+
+                <button name="favfilme" id="favfilme" onclick="favFunction()">Favorito</button>
+            </form>
         </div>
         <?php
             }
