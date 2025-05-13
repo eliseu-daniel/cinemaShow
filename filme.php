@@ -51,12 +51,13 @@
         </iframe>
         </div>
         <div class="fav">
-            <form action="./filmebd.php" method="post">
-                <input type="hidden" name="idFilme" value="<?= $idFilme?>" >
-                <input type="hidden" name="idUser" value="<?= $_SESSION['id'];?>" >
-
-                <button name="favfilme" id="favfilme" onclick="favFunction()">Favorito</button>
-            </form>
+            <button name="favfilme" id="favfilme" 
+                data-id-filme="<?php echo($idFilme); ?>" 
+                data-id-user="<?php echo $_SESSION["id"] ?>"
+                style="<?php echo $isFavorito ? 'background-color: rgb(4, 154, 154); font-size: 24px; width: 140px; border-radius: 10px; text-transform: uppercase; color: rgb(195, 195, 195);' : ''; ?>"
+                onclick="favFunction(this)">
+                Favorito
+            </button>
         </div>
         <?php
             }
